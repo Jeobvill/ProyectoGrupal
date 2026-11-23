@@ -131,6 +131,22 @@
             <Form>FormaEscribirArchivo</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Formularios\Forma_Coprocesador.pas">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Formularios\Forma_LeerArchivos.pas">
+            <Form>Form4</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Formularios\Forma_Devices.pas">
+            <Form>Form5</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Formularios\Forma_VelizPartida.pas">
+            <Form>FormaVelizPartida</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
