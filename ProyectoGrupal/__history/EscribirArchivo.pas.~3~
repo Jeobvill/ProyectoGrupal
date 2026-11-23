@@ -1,0 +1,44 @@
+unit EscribirArchivo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFormaEscribirArchivo = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Panel1: TPanel;
+    Emu86: TMemo;
+    Button3: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormaEscribirArchivo: TFormaEscribirArchivo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormaEscribirArchivo.Button1Click(Sender: TObject);
+begin
+  try
+     if(fileExists('C:\LI\lemu8086\Tema4\Termometro02.asm')) then
+     begin
+       mmEmu.
+       Lines.
+       LoadFromFile('C:\LI\lemu8086\Tema4\Termometro02.asm');
+     end;
+  except
+     showMessage('Error! Programa no encontrado');
+  end;
+end;
+
+end.
